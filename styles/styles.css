@@ -34,6 +34,10 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-size: 0;
+}
+
 /* Container */
 
 main {
@@ -44,7 +48,6 @@ main {
   gap: calc(27.5em / 13);
   margin-top: calc(50em / 13);
   margin-bottom: calc(50em / 13);
-  
 }
 
 /** Medium devices (tablets, 768px and up) **/
@@ -115,37 +118,37 @@ h2 + p {
   line-height: 1.4em;
 }
 
-.testimonial:nth-child(1) {
+.testimonial:nth-of-type(1) {
   background: url("../images/bg-pattern-quotation.svg") no-repeat
     hsl(263, 55%, 52%);
   background-position: top right calc(42em / 13);
   background-size: calc(113em / 13);
 }
 
-.testimonial:nth-child(2) {
+.testimonial:nth-of-type(2) {
   background: hsl(217, 19%, 35%);
 }
 
-.testimonial:nth-child(3),
-.testimonial:nth-child(5) {
+.testimonial:nth-of-type(3),
+.testimonial:nth-of-type(5) {
   background: hsl(0, 0%, 100%);
   color: hsl(217, 19%, 35%);
 }
 
-.testimonial:nth-child(3) p:not(h2 + p):last-child,
-.testimonial:nth-child(3) h2 + p,
-.testimonial:nth-child(5) p:not(h2 + p):last-child,
-.testimonial:nth-child(5) h2 + p {
+.testimonial:nth-of-type(3) p:not(h2 + p):last-child,
+.testimonial:nth-of-type(3) h2 + p,
+.testimonial:nth-of-type(5) p:not(h2 + p):last-child,
+.testimonial:nth-of-type(5) h2 + p {
   color: hsl(217, 19%, 35%);
 }
 
-.testimonial:nth-child(4) {
+.testimonial:nth-of-type(4) {
   background: hsl(219, 29%, 14%);
 }
 
 /** Medium devices (tablets, 768px and up) **/
 @media (min-width: 768px) {
-  .testimonial:first-child {
+  .testimonial:first-of-type {
     background-size: calc(110em / 13);
     background-position: top right calc(69em / 13);
   }
@@ -155,15 +158,15 @@ h2 + p {
     width: 100%;
   }
 
-  .testimonial:nth-child(1) {
+  .testimonial:nth-of-type(1) {
     grid-area: daniel;
   }
 
-  .testimonial:nth-child(4) {
+  .testimonial:nth-of-type(4) {
     grid-area: patrick;
   }
 
-  .testimonial:nth-child(5) {
+  .testimonial:nth-of-type(5) {
     grid-area: kira;
   }
 }
